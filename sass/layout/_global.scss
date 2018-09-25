@@ -1,0 +1,48 @@
+body {
+  background:#fff;
+  font-size:18px;
+  line-height: 26px;
+  font-weight: 200;
+  font-family:"Aktiv Grotesk W01", "Roboto",sans-serif;
+  color:#555;
+  overflow-x: hidden;
+  margin-top: 71px;
+  @include respond-above('mobile-break'){
+    margin-top:78px;
+  }
+}
+
+a {
+  color:#000;
+  text-decoration:none;
+  -webkit-transition: all .3s;
+  transition: all .2s;
+}
+
+a:hover, a:active, a:focus {
+  outline: none!important;
+}
+
+.hide-on-mobile{
+  @include respond-below('tablet') {
+    display:none!important;
+  }
+}
+
+.hide-on-desktop{
+  @include respond-above('tablet'){
+    display:none!important;
+  }
+}
+
+
+
+  .inner-wrap{
+    @include make-row();
+    @include justify-content(center);
+  }
+
+
+.full-width{
+  @include make-col(12);
+}

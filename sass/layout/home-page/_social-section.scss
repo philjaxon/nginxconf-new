@@ -1,0 +1,32 @@
+.social-section{
+  background-color: $primary;
+  padding: 70px 30px;
+  header{
+    @include make-col-xs(12);
+    @include make-col-md(auto);
+
+    h2{
+      text-align: center;
+      font-size: 32px;
+      line-height: 32px;
+      margin: 0 8px 35px;
+      color: #fff;
+
+      @include respond-above(mobile-break){
+        margin-bottom: 0;
+      }
+    }
+  }
+  figure{
+    @include make-col-xs(auto);
+    img{
+      width: 55px;
+      height: 55px;
+      @include respond-above(mobile-break){
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+  }
+}

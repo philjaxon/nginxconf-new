@@ -1,0 +1,39 @@
+.location-info-section{
+  padding: 70px 20px;
+  background-color: rgb(247, 248, 248);
+  .container{
+  .inner-wrap{
+    @include respond-above(mobile-break){
+    @include flex-direction('row-reverse');
+    }
+  }
+  }
+
+  h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  .content-left{
+    @include make-col(12);
+    @include make-col-md(5);
+    img{
+      width: 100%;
+    }
+    img:not(:last-child){
+      margin-bottom: 15px;
+    }
+  }
+  .content-right{
+    @include make-col(12);
+    @include make-col-md(7);
+    margin-bottom: 50px;
+    @include respond-above('mobile-break'){
+      padding-left: 70px;
+      margin-bottom: 0;
+    }
+  }
+  .cta-button{
+    margin-left: 0;
+  }
+
+}

@@ -1,0 +1,144 @@
+
+#wrapper-navbar {
+
+
+@media only screen and (max-width: 767px){
+  .navbar-nav > li {
+      border-top: 1px solid #333232;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+    .navbar-nav > li:first-child {
+      border-top: none;
+    }
+
+    .nav-link:hover{
+      box-shadow:none;
+    }
+
+}
+  .show, .collapsing{
+     //background-color:#000!important;
+     margin-left: -15px;
+     margin-right: -15px;
+
+  }
+  .navbar{
+    //height:78px;
+    @include respond-below('tablet'){
+      //padding-bottom:0;
+    }
+  }
+  nav{
+    //@include top-nav-style;
+    background-color: $dark-gray;
+    //height: 71px;
+    //@include align-items(flex-start);
+
+    @include respond-above('tablet') {
+      height: 78px;
+    }
+
+    .navbar-brand{
+      img{
+        height: 54px;
+        margin-left: 0;
+      }
+      @include respond-below('tablet'){
+        display:none;
+      }
+    }
+    .container{
+      @include respond-below('container-100'){
+        max-width: 100%;
+      }
+    }
+    .main-menu {
+      .navbar-dark .navbar-nav .nav-link {
+        color: #fff;
+          a {
+            color: #fff;
+          }
+          a:hover{
+            color: #fff;
+          }
+          a:active{
+            color: #fff;
+          }
+        }
+      }
+
+
+  }
+
+
+}
+
+.navbar-collapse{
+  @include respond-below('tablet'){
+    ul{
+      background-color: #000;
+      margin-left: -16px!important;
+      margin-right: -15px;
+      //margin-top: 15px;
+    }
+
+  }
+
+}
+.navbar-expand-md{
+  padding-bottom:0px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: $nginx-navbar-toggler-icon;
+}
+
+.navbar-dark .navbar-toggler{
+  color: #fff;
+  border-color: #fff;
+  margin-top: 11px;
+   margin-bottom: 19px;
+}
+
+.navbar-dark {
+  .navbar-nav {
+    .nav-link {
+      font-size: 15px;
+      color:#fff;
+      line-height: 20px;
+      font-weight: 300;
+      padding: 5px 2px;
+      margin-left: 29px;
+
+      @include respond-below('menu-break-1'){
+        margin-left:18px;
+      }
+
+      @include respond-below('menu-break-2'){
+        font-size: 12px;
+        padding: 4px 0;
+      }
+
+
+      @include respond-below('tablet'){
+        font-size: 15px;
+        padding: 16px 20px !important;
+        text-align: left;
+        width: 100%;
+
+      }
+
+    }
+    .nav-link:hover{
+      color:#fff;
+      box-shadow: 0 2px 0 0 #fff;
+    }
+
+  }
+}
+.nav-cta-buttons-mobile{
+  margin-left: auto;
+  margin-right: auto;
+}

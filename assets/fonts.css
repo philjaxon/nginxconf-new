@@ -1,0 +1,57 @@
+
+@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=feefd75c-1bf0-4362-9809-300cd7002365");
+@font-face {
+	font-family:"Aktiv Grotesk W01_n2";
+	src: url("fonts/aktiv/a5cd7b48-fe3c-4c5d-89d2-575ba3e0bbe8.eot?#iefix") format("eot")
+}
+@font-face {
+	font-family:"Aktiv Grotesk W01";
+	src: url("fonts/aktiv/a5cd7b48-fe3c-4c5d-89d2-575ba3e0bbe8.eot?#iefix");
+	src: url("fonts/aktiv/a5cd7b48-fe3c-4c5d-89d2-575ba3e0bbe8.eot?#iefix") format("eot"),url("fonts/aktiv/43e12dfb-339e-40c1-ad28-6aff091d34e7.woff2") format("woff2"),url("fonts/aktiv/06017a84-551c-401f-b300-ce5b0ecdba61.woff") format("woff"),url("fonts/aktiv/3eca8fb4-ba4f-4797-adaa-618e0dd58a3c.ttf") format("truetype"),url("fonts/aktiv/b63cf2f3-6b55-4f75-8796-761df0cc7c62.svg#b63cf2f3-6b55-4f75-8796-761df0cc7c62") format("svg");
+	font-weight: 200;
+	font-style: normal;
+}
+@font-face {
+	font-family:"Aktiv Grotesk W01_i2";
+	src:url("fonts/aktiv/4485f6f9-b7e6-4a2d-a2e5-19dc891e1bdd.eot?#iefix") format("eot")
+}
+@font-face {
+	font-family:"Aktiv Grotesk W01";
+	src:url("fonts/aktiv/4485f6f9-b7e6-4a2d-a2e5-19dc891e1bdd.eot?#iefix");
+	src:url("fonts/aktiv/4485f6f9-b7e6-4a2d-a2e5-19dc891e1bdd.eot?#iefix") format("eot"),url("fonts/aktiv/91ca2f3c-456a-40cd-ab5d-4828c90e6988.woff2") format("woff2"),url("fonts/aktiv/ec3dc2a7-f2bc-464e-b155-b11d84cbe546.woff") format("woff"),url("fonts/aktiv/bde35372-e501-4b62-bb8a-4335dc048618.ttf") format("truetype"),url("fonts/aktiv/c4686ca9-fb00-4304-8b6a-49eca8b47151.svg#c4686ca9-fb00-4304-8b6a-49eca8b47151") format("svg");
+	font-weight: 200;
+	font-style: italic;
+}
+@font-face {
+	font-family:"Aktiv Grotesk W01_i4";
+	src:url("fonts/aktiv/eb7e1583-f170-499c-b383-26e651b23b99.eot?#iefix") format("eot")
+}
+@font-face {
+	font-family:"Aktiv Grotesk W01";
+	src:url("fonts/aktiv/eb7e1583-f170-499c-b383-26e651b23b99.eot?#iefix");
+	src:url("fonts/aktiv/eb7e1583-f170-499c-b383-26e651b23b99.eot?#iefix") format("eot"),url("fonts/aktiv/6c744fc6-6bee-43cc-b3f8-bb2956be6d86.woff2") format("woff2"),url("fonts/aktiv/d7a58d10-6b95-4d70-9790-a515d1cdf128.woff") format("woff"),url("fonts/aktiv/fe404883-ca29-4385-a8f8-d4c599172d05.ttf") format("truetype"),url("fonts/aktiv/4e016e8c-530c-48d4-a516-64a0ef9d6979.svg#4e016e8c-530c-48d4-a516-64a0ef9d6979") format("svg");
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family:"Aktiv Grotesk W01_n5";
+	src:url("fonts/aktiv/12b66499-2e8d-4034-8fd5-61505c67e402.eot?#iefix") format("eot")
+}
+@font-face {
+	font-family:"Aktiv Grotesk W01";
+	src:url("fonts/aktiv/12b66499-2e8d-4034-8fd5-61505c67e402.eot?#iefix");
+	src:url("fonts/aktiv/12b66499-2e8d-4034-8fd5-61505c67e402.eot?#iefix") format("eot"),url("fonts/aktiv/c510fb33-d5b0-40fb-8c35-a0e6b2035bcd.woff2") format("woff2"),url("fonts/aktiv/2f8ebed4-a49e-46f9-81a8-982d97cf61d1.woff") format("woff"),url("fonts/aktiv/90440004-7287-40a0-9e61-5a7e1f977e3d.ttf") format("truetype"),url("fonts/aktiv/4fcff415-b402-4bc8-a2db-add22754c095.svg#4fcff415-b402-4bc8-a2db-add22754c095") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family:"Aktiv Grotesk W01_n7";
+	src:url("fonts/aktiv/e5b10466-0a77-4de7-8499-db235184e968.eot?#iefix") format("eot")
+}
+@font-face {
+	font-family:"Aktiv Grotesk W01";
+	src:url("fonts/aktiv/e5b10466-0a77-4de7-8499-db235184e968.eot?#iefix");
+	src:url("fonts/aktiv/e5b10466-0a77-4de7-8499-db235184e968.eot?#iefix") format("eot"),url("fonts/aktiv/17d11d65-4e0e-4681-88ab-4c5faa2fc3bf.woff2") format("woff2"),url("fonts/aktiv/b58d0e0d-fcd2-4365-bd63-c85a8ae3ed4d.woff") format("woff"),url("fonts/aktiv/d5d49499-3679-4b89-9ef5-f5a4b4dd7f8a.ttf") format("truetype"),url("fonts/aktiv/943552cc-7727-42fd-b8e1-a79a1829746d.svg#943552cc-7727-42fd-b8e1-a79a1829746d") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}

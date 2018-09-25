@@ -1,0 +1,38 @@
+@mixin make-flex-vertical(){
+  -webkit-box-orient: vertical!important;
+  -webkit-box-direction: normal!important;
+  -ms-flex-direction: column!important;
+  flex-direction: column!important;
+}
+
+
+.sponsors-section{
+    text-align: center;
+    padding: 60px 0 60px 0;
+
+  .section-title{
+    @include make-row();
+    h2{
+      @include make-col(12);
+    }
+  }
+
+  img{
+    height:50px;
+  }
+
+  .section-content{
+    @include make-row();
+    align-items: center;
+    justify-content: center;
+
+    figure{
+      @include make-col-xs(6);
+      //@extend .col-sm-auto;
+      @include make-col-sm(auto);
+      margin: 22px;
+      padding: 0;
+    }
+  }
+
+}

@@ -1,0 +1,68 @@
+.schedule-section{
+  padding: 100px 15px;
+  color: #fff;
+  @include make-container();
+  background: $green-gradient;
+  header{
+    @include make-row();
+  }
+  h2{
+    margin-bottom: 32px;
+    font-weight: 300;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  h3{
+    font-weight: 700;
+    margin-bottom: 11px;
+    font-size: 16px;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+  .section-title{
+    @include make-row();
+    width: 100%;
+    h2{
+      @include make-col-sm(12);
+    }
+  }
+  .section-content{
+    @include make-row();
+    ul{
+      font-size: 15px;
+      width: 220px!important;
+      padding-left: 20px;
+      @include respond-above(mobile-break){
+        width: auto;
+      }
+    }
+    li{
+      margin-bottom: 5px;
+      line-height: 17px;
+    }
+    :last-child {
+    border-right: none;
+    }
+  }
+
+  .schedule-column{
+    @include make-col-xs(auto);
+    //@include make-col-md(3);
+    @include make-col-lg(3);
+    padding: 0 30px;
+
+    @include respond-below(mobile-break){
+      //@include flex-direction(column);
+    }
+
+    @include respond-above(menu-break-1){
+    border-right: 1px solid #fff;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgb(255, 255, 255);
+    }
+  }
+
+}

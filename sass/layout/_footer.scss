@@ -1,0 +1,52 @@
+.footer-section{
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 265px;
+  padding-bottom: 105px;
+
+  .footer-nginx-logo{
+    width: 116px;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 17px;
+  }
+
+  ul {
+    @include clearfix();
+    list-style: none;
+    padding-left: 0;
+
+    li:not(:last-child):after {
+    content: '|';
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #fff;
+    }
+
+
+    }
+  li {
+      float: left;
+      font-size: 15px;
+      font-weight: 200;
+      line-height: 26px;
+      //margin-left: 12px;
+      //margin-right: 12px;
+    }
+
+
+
+  a {
+      text-align: center;
+      display: inline;
+      //padding: 8px;
+      color: #fff;
+  }
+
+  .footer-menu{
+    @include make-container();
+  }
+
+}

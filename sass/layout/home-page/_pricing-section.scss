@@ -1,0 +1,65 @@
+//pricing Block
+
+.pricing-section{
+  @include make-container();
+  color: #bbbcbc;
+  text-align: center;
+
+
+  h3{
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 26px;
+    font-weight: 200;
+    font-size:  60px;
+    margin-bottom: 26px;
+
+  }
+  span{
+    font-size: 35px;
+    display: inline;
+    position: relative;
+    top: -12px;
+  }
+  p{
+    font-size: 23px;
+    margin-bottom: 0;
+  }
+  .inner-wrap{
+    background: $green-gradient;
+    .price:first-child{
+      color:#fff;
+    }
+
+    .price:last-child{
+      background-color: #185633;
+    }
+
+    @include respond-below(menu-break-1){
+      h3{
+        font-size: 50px;
+        margin-bottom: 18px;
+      }
+      p{
+        font-size: 20px;
+      }
+    }
+
+
+    @include make-row();
+    .price{
+      padding-top: 80px;
+      padding-bottom:80px;
+      //background-color: $primary;
+      @include make-col-ready();
+      @include make-col(12);
+      @include respond-above(menu-break-1){
+        @include make-col(3);
+      }
+      @include respond-below(menu-break-1){
+        padding-bottom: 27px;
+        padding-top: 27px;
+      }
+    }
+  }
+}

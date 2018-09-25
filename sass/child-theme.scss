@@ -1,0 +1,43 @@
+@import "theme/child_theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "assets/bootstrap4";// <--------- Loads Bootstrap3 or Bootstrap4. Change from /bootstrap3 to /bootstrap4 Watch out! just for testing in the moment!
+@import "../src/sass/understrap/understrap/understrap";// <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "../src/sass/understrap/theme/contact-form7";// <-------- Loads some basic styling for contact form 7 plugin
+
+//Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/font-awesome"; // <------- Font Awesome Icon font
+@import "assets/underscores"; // <------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/child_theme";  // <--------- Add your styles into this file
+@import "base/variables";
+@import "base/colors";
+
+@import "mixins/navbar-mixins";
+@import "mixins/media-queries-mixins";
+@import "mixins/grid-mixins";
+@import "mixins/utilities-mixins";
+@import "layout/navbar";
+@import "layout/global";
+@import "base/buttons";
+@import "base/fonts";
+@import "base/banners";
+@import "layout/home-page/home-page";
+@import "layout/home-page/pricing-section";
+//@import "layout/home-page/banner-section";
+@import "layout/home-page/speakers-section";
+@import "layout/home-page/sponsors-section";
+@import "layout/home-page/social-section";
+@import "layout/home-page/video-section";
+@import "layout/home-page/schedule-section";
+@import "layout/home-page/review-section";
+@import "layout/footer";
+@import "layout/hotel-travel-page/banner-section";
+@import "layout/hotel-travel-page/experience-section";
+@import "layout/hotel-travel-page/transportation-section";
+@import "layout/hotel-travel-page/intl-attendees-section";
+@import "layout/about-page/banner-section";
+@import "layout/about-page/highlights-section";
+@import "layout/about-page/tracks-section";
+@import "layout/about-page/bottom-block-section";
+@import "layout/hero/hero";
+@import "layout/pricing/pricing";

@@ -1,0 +1,54 @@
+@mixin make-col-xs( $cols ) {
+	@include make-col-ready();
+	@media (min-width: #{map-get( $grid-breakpoints, xs )}) {
+    @if $cols == auto {
+      @include make-auto-width-col();
+    } @else {
+		@include make-col( $cols );
+    }
+	}
+}
+
+@mixin make-col-sm( $cols ) {
+	@include make-col-ready();
+	@media (min-width: #{map-get( $grid-breakpoints, sm )}) {
+    @if $cols == auto {
+      @include make-auto-width-col();
+    } @else {
+  	   @include make-col( $cols );
+    }
+	}
+}
+
+@mixin make-col-md( $cols ) {
+	@include make-col-ready();
+	@media (min-width: #{map-get( $grid-breakpoints, md )}) {
+    @if $cols == auto {
+      @include make-auto-width-col();
+    } @else {
+  	  @include make-col( $cols );
+    }
+	}
+}
+
+@mixin make-col-lg( $cols ) {
+	@include make-col-ready();
+	@media (min-width: #{map-get( $grid-breakpoints, lg )}) {
+		@include make-col( $cols );
+	}
+}
+
+@mixin make-col-xl( $cols ) {
+	@include make-col-ready();
+	@media (min-width: #{map-get( $grid-breakpoints, xl )}) {
+		@include make-col( $cols );
+	}
+}
+
+@mixin make-auto-width-col(){
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+}

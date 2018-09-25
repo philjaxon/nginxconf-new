@@ -1,0 +1,82 @@
+.tracks-section{
+  background: $green-gradient;
+  color: #fff;
+  text-align:center;
+  padding: 60px 20px 50px;
+  @include make-container();
+
+  p{
+    font-size: 16px;
+    @include respond-below(mobile-break){
+      text-align:center;
+    }
+  }
+  .inner-wrap{
+    .section-content{
+      @include make-row();
+    }
+  }
+  .section-title{
+    width: 100%;
+    h2{
+      font-size: 30px;
+      margin: 0 0 40px;
+      font-weight: lighter;
+    }
+  }
+  .section-description{
+    @include make-row();
+    //width:100%;
+    margin-bottom: 48px;
+    padding: 0 80px;
+
+  }
+
+  .track{
+    text-align: left;
+    margin-bottom: 26px;
+    @include make-col-xs(12);
+    @include make-col-md(4);
+
+    h2{
+      text-transform: uppercase;
+      font-size: 28px;
+      margin: 0 0 10px;
+      font-weight: lighter;
+
+    }
+    h4{
+      font-size: 18px;
+      margin: 0;
+      font-weight: lighter;
+    }
+
+    header{
+      @include make-row();
+      figure{
+        @include make-col-xs(auto);
+      }
+      img{
+        width: 62px;
+      }
+      @include respond-below(mobile-break){
+        @include justify-content(center);
+      }
+    }
+  }
+
+
+  .track-header-short{
+    @include respond-above(mobile-break){
+      display: none;
+    }
+    @include make-col-xs(4);
+  }
+  .track-header-full{
+    padding:0!important;
+    @include make-col-xs(auto);
+    @include respond-below(mobile-break){
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.transportation-section{
+  padding-top: 70px;
+  padding-bottom: 50px;
+  color:#fff;
+  background: $green-gradient;
+  h2{
+    margin-bottom: 35px;
+  }
+  .transportation-vehicles{
+    @include make-row();
+    margin-top: 34px;
+    text-align: center;
+
+    .vehicles-left{
+      @include make-col(6);
+      text-align: center;
+        img:first-child{
+          margin-bottom: 25px;
+        }
+        img:last-child{
+          margin-bottom: 1px;
+        }
+    }
+    .vehicles-right{
+      @include make-col(6);
+    }
+  }
+  .content-left{
+    img{
+      width: 150px;
+    }
+    @include make-col-sm(12);
+    @include make-col-md(6);
+
+  }
+  .content-right{
+    img{
+      margin-bottom: 20px;
+      height: 50px;
+      @include respond-below(mobile-break){
+        display:block;
+        margin-right:auto;
+        margin-left:auto;
+      }
+    }
+    @include make-col-sm(12);
+    @include make-col-md(6);
+  }
+}

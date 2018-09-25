@@ -1,0 +1,79 @@
+.review-section{
+  background-color: $grey;
+  padding: 70px 0;
+  @include respond-below('mobile-break'){
+    padding: 40px 0 20px 0;
+  }
+
+  .review-content{
+    background-color: rgb(247, 246, 245);
+    padding:30px;
+    height: 100%;
+    @include clearfix();
+    @include respond-below('mobile-break'){
+      background: none;
+    }
+
+    .inner-content{
+      width: 95%;
+      max-width: 455px;
+      @include respond-below('mobile-break'){
+        width: auto;
+        max-width: none;
+        text-align: center;
+        h2{
+          color: #fff;
+          font-weight: 300;
+          margin-bottom: 17px;
+        }
+      }
+    }
+    .inner-content-left{
+      float: right;
+      @include respond-below('mobile-break'){
+        float:none;
+      }
+    }
+    .inner-content-right{
+      float: left;
+      @include respond-below('mobile-break'){
+        float:none;
+      }
+    }
+     h5 {
+       margin-top: 10px;
+       a {
+        color: $primary;
+        font-size: 14px;
+      }
+    }
+    .highlight-videos{
+      margin-bottom: 30px;
+
+    }
+    .highlight-videos:last-child{
+        margin-bottom: 0;
+      }
+
+  }
+
+  .content-left{
+    @include make-col-xs(12);
+    @include make-col-md(6);
+    padding-right: 28px;
+    padding-left: 0;
+    @include respond-below('mobile-break'){
+      padding:0 15px;
+    }
+  }
+
+  .content-right{
+    @include make-col-xs(12);
+    @include make-col-md(6);
+    padding-right: 0;
+    padding-left: 28px;
+    @include respond-below('mobile-break'){
+      padding:0 15px;
+    }
+  }
+}

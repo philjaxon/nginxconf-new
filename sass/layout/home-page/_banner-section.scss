@@ -1,0 +1,142 @@
+.home-banner{
+  //@include make-container();
+  justify-content: center;
+  color: #fff;
+  .banner-wrap{
+     video {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      opacity:0.5;
+    }
+
+    }
+  h2{
+    margin: 0 0 25px;
+    font-size: 35px;
+  }
+  h3{
+    margin: 0 0 30px;
+    font-size: 24px;
+  }
+  p{
+    line-height: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  h4{
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+  }
+  figure{
+    @include make-col(12);
+    text-align: center;
+  }
+
+
+  .banner-right {
+    @extend .col-lg-auto, .d-none, .d-lg-block;
+    width: 470px;
+    align-self: flex-end;
+  }
+  .inner-wrap{
+    padding-bottom: 80px;
+    align-items: end;
+
+    .banner-left{
+      @include make-col-xs(12);
+      @include make-col-lg(6);
+      justify-content: center;
+    }
+
+      .cta-button{
+        margin-top: 42px;
+        @include respond-above('mobile-break'){
+          float: right;
+        }
+      }
+    }
+      @include respond-below('mobile-break'){
+        text-align: center;
+      }
+  footer{
+    text-align: center;
+    .cta-button{
+      margin-left: 0px;
+    }
+  }
+}
+
+.sponsors-banner{
+  color: #fff;
+  text-align: center;
+  padding-top: 190px;
+  padding-bottom: 100px;
+  h1{
+    margin-bottom: 54px;
+  }
+  p{
+    line-height: 23px;
+  }
+  .banner-content{
+    @include make-col(12);
+    max-width: 800px;
+  }
+}
+
+
+.hotel-banner{
+
+  @include make-container();
+  .cta-button{
+    margin: 12px 0 40px;
+  }
+
+  .overlay{
+    background: rgba(0,0,0,0.5);
+
+  }
+    .banner-top{
+      @include make-row();
+      margin-bottom: 150px;
+      @include respond-above('mobile-break'){
+    }
+
+    }
+  .location-map{
+    width:100%!important;
+  }
+
+
+}
+
+.hotel-page-wrapper{
+  .banner-wrap{
+    padding-bottom: 25px!important;
+  }
+}
+
+.banner-wrap{
+  @extend .jumbotron;
+  @extend .jumbotron-fluid;
+  color: #fff;
+  background-color: #02070b;
+//	background-image: url('path/image.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+  background-position: top center;
+  justify-content:center;
+  //@extend .d-flex;
+  //@extend .flex-lg-wrap;
+
+  .inner-wrap{
+    justify-content: center;
+    @include make-row();
+  }
+
+}

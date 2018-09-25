@@ -1,0 +1,72 @@
+//pricing Block
+
+
+.pricing-cost{
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 26px;
+  font-weight: 200;
+  font-size:  60px;
+  margin-bottom: 26px;
+}
+
+.pricing-currencySign{
+  font-size: 35px;
+  display: inline;
+  position: relative;
+  top: -12px;
+}
+
+.pricing-description{
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.pricing-subText{
+  font-size: 80%;
+  margin-bottom:0;
+}
+
+.pricing-level:last-child{
+  background-color: #185633;
+}
+
+.pricing-innerWrap{
+  background: $green-gradient;
+
+  @include respond-below(menu-break-1){
+    .pricing-cost{
+      font-size: 50px;
+      margin-bottom: 18px;
+    }
+    .pricing-description{
+      font-size: 20px;
+    }
+  }
+  @include make-row();
+}
+
+
+
+
+.pricing{
+  @include make-container();
+  color: #bbbcbc;
+  text-align: center;
+}
+
+
+.pricing-level{
+  padding-top: 80px;
+  padding-bottom:80px;
+  //background-color: $primary;
+  @include make-col-ready();
+  @include make-col(12);
+  @include respond-above(menu-break-1){
+    @include make-col(3);
+  }
+  @include respond-below(menu-break-1){
+    padding-bottom: 27px;
+    padding-top: 27px;
+  }
+}

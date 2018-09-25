@@ -1,0 +1,156 @@
+.home-banner.banner-wrap{
+  background-size: contain;
+}
+.home-banner{
+  @extend .jumbotron;
+  @extend .jumbotron-fluid;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  video {
+   position: absolute;
+   top: 0;
+   width:100%;
+   height:100%;
+   object-fit: cover;
+   opacity:1;
+   z-index:0;
+   @include respond-below('container-100'){
+     display:none;
+   }
+ }
+  //@include make-container();
+  justify-content: center;
+  color: #fff;
+  h1{
+    color: #00934c;
+    font-size: 53px;
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-weight: 500;
+  }
+  h2{
+    margin: 0 0 25px;
+    font-size: 35px;
+  }
+  h3{
+    margin: 0 0 30px;
+    font-size: 24px;
+  }
+  p{
+    line-height: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  h4{
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+  }
+  figure{
+    @include make-col(12);
+    text-align: center;
+  }
+
+
+  .banner-right {
+    @extend .col-lg-auto, .d-none, .d-lg-block;
+    width: 470px;
+    align-self: flex-end;
+  }
+  .inner-wrap{
+    align-items: end;
+
+    .banner-left{
+      @include make-col-xs(12);
+      @include make-col-lg(6);
+      justify-content: center;
+    }
+
+      .cta-button{
+        margin-top: 42px;
+        margin-left: 0;
+        @include respond-above('container-100'){
+          float: right;
+        }
+      }
+
+      footer{
+        z-index:1;
+        @include make-col(12);
+        text-align: center;
+        margin-top: 30px;
+        .cta-button{
+          float:none;
+          margin-left: 0;
+          margin-top: 0;
+        }
+        //@extend container;
+      }
+
+
+    }
+      @include respond-below('mobile-break'){
+        text-align: center;
+      }
+}
+
+.sponsors-banner{
+  color: #fff;
+  text-align: center;
+  text-align: center;
+  padding-top: 190px;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #000;
+  padding-top: 190px;
+  padding-bottom: 100px;
+  h1{
+    margin-bottom: 54px;
+  }
+  p{
+    line-height: 23px;
+  //  max-width: 950px;
+    //padding: 0 80px;
+  }
+  .banner-content{
+    @include make-col(12);
+    max-width: 800px;
+  }
+}
+
+
+.overlay{
+  background: linear-gradient(
+                       rgba(0,0,0, .5),
+                       rgba(0,0,0, .5)),
+                       url(http://nginxconfwpdev.lndo.site/wp-content/themes/nginxconf-new/assets/images/Conf2018-HotelAndTravel-background-top-desktop-1366x1324.png);
+}
+
+
+
+.banner-wrap{
+
+  color: #fff;
+
+  justify-content:center;
+
+
+  .inner-wrap{
+    justify-content: center;
+    @include make-row();
+  }
+
+  h1{
+    font-size: 54px;
+    font-weight: 100;
+    line-height: 48px;
+  }
+
+}

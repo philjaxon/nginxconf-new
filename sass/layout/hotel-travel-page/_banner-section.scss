@@ -1,0 +1,54 @@
+.hotel-page-wrapper{
+  .banner-wrap{
+    background-size: 100% auto!important;
+    background-repeat: no-repeat!important;
+    background-color: #000!important;
+    padding-top: 85px;
+  }
+}
+.hotel-banner{
+
+  @include make-container();
+  .cta-button{
+    margin: 12px 0 40px;
+  }
+
+  @include respond-below(mobile-break){
+    text-align:center;
+  }
+
+  .banner-top{
+    h1{
+      margin: 0 0 33px;
+    }
+    @include make-row();
+    margin-bottom: 300px;
+    @include respond-below(mobile-break){
+      margin-bottom: 150px;
+    }
+    .banner-intro{
+      @include make-col-md(8);
+      @include make-col-lg(6);
+    }
+  }
+
+  .banner-bottom{
+    @include make-row();
+    }
+
+  .content-left{
+    @include make-col-md(7);
+  }
+
+  .content-right{
+    @include make-col-md(5);
+    @include make-d-flex();
+    @include align-items(center);
+  }
+
+  .location-map{
+    width:100%!important;
+  }
+
+
+}

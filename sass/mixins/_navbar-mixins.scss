@@ -1,0 +1,14 @@
+@mixin top-nav-style {
+  @extend .navbar;
+  @extend .navbar-expand-md;
+  @extend .navbar-dark;
+  //@extend .bg-primary;
+
+}
+
+@mixin top-nav-toggler-style {
+  @extend .navbar-toggler;
+  span{
+    //background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' stroke='rgba(255, 255, 255)'");
+  }
+}

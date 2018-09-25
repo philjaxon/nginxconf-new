@@ -1,0 +1,24 @@
+.intl-attendees-section{
+  @include make-container();
+  padding-top: 73px;
+  padding-bottom: 73px;
+  text-align: center;
+  a{
+    color: $primary;
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .section-title{
+    @include make-col(12);
+  }
+  .section-content{
+    @include make-col-xs(10);
+    @include make-col-sm(9);
+    @include make-col-md(8);
+    @include make-col-lg(5);
+    @include make-col-xl(4);
+  }
+}
